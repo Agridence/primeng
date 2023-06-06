@@ -9,7 +9,7 @@ app.use(
 );
 app.get("/*", function (req, res) {
   res.sendFile("index.html", {
-    root: "dist/HeveaConnectPlatformFrontend/browser/",
+    root: __dirname + '/dist/primeng/browser',
   });
 });
 app.listen(process.env.PORT || port, () => {

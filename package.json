@@ -18,6 +18,7 @@
         "dev:ssr": "ng run primeng:serve-ssr",
         "serve:ssr": "node dist/primeng/server/main.js",
         "build:ssr": "ng build --configuration=production && ng run primeng:server",
+        "build:ghpages": "ng build --configuration production --output-path docs --base-href /primeng/",
         "prerender": "ng run primeng:prerender",
         "vercel-build": "npm run build:ssr",
         "apidoc": "node ./api-generator/build-apidoc.ts"
